@@ -38,10 +38,14 @@ export const About = (props: { colors: Object }) => (
       </div>
       <Subtitle colors={props.colors}>Presentation</Subtitle>
       <div>
-        <b>2019</b>. Introduction to AI and Machine Learning. General audience
-        talk on the basics of AI and related ethical issues. Given at Soho House
-        Ludlow Tech Club, New York, NY (May 14) and for visiting students from
-        Osaka College of Design and IT, Los Angeles, CA (November 15).
+        <b>2019</b>.{' '}
+        <a className="reverse" href="2019_ML_and_AI.pdf" target="_blank">
+          Introduction to AI and Machine Learning.
+        </a>{' '}
+        General audience talk on the basics of AI and related ethical issues.
+        Given at Soho House Ludlow Tech Club, New York, NY (May 14) and for
+        visiting students from Osaka College of Design and IT, Los Angeles, CA
+        (November 15).
       </div>
     </Bio>
   </Page>

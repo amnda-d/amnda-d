@@ -16,6 +16,9 @@ export class Header extends React.Component {
           <Link to="/about">About</Link>
           <Link to="/software">Software</Link>
           <Link to="/contact">Contact</Link>
+          <a href="ad_cv.pdf" target="_blank">
+            CV
+          </a>
         </Links>
       </Wrapper>
     );
