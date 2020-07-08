@@ -35,7 +35,7 @@ export class App extends React.Component {
   state = { color: getColorScheme(), colors: colors() };
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Background
           color={this.state.color}
           setColor={color =>
