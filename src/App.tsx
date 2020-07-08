@@ -6,7 +6,7 @@ import { IconNames } from '@blueprintjs/icons';
 import { colors, getColorScheme, light, dark } from './colors';
 import { Title } from './pages/title';
 import { Contact } from './pages/contact';
-import { Sideeye } from './pages/sideeye';
+import { Software } from './pages/software';
 import { About } from './pages/about';
 
 const Background = props => (
@@ -48,8 +48,11 @@ export class App extends React.Component {
             component={() => <Title colors={this.state.colors} />}
           />
           <Route path="/contact" component={Contact} />
-          <Route path="/about" component={About} />
-          <Route path="/sideeye" component={Sideeye} />
+          <Route
+            path="/about"
+            render={() => <About colors={this.state.colors} />}
+          />
+          <Route path="/software" component={Software} />
         </Background>
       </Router>
     );

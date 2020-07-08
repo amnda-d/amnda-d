@@ -15,7 +15,7 @@ export const Title = (props: { colors: {} }) => (
     </TitleLine>
     <Links colors={props.colors}>
       <Link to="/about">About</Link>
-      <Link to="/sideeye">SideEye</Link>
+      <Link to="/software">Software</Link>
       <Link to="/contact">Contact</Link>
     </Links>
   </Wrapper>

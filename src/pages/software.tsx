@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { colors } from '../colors';
 import { Page } from '../page';
 
-export const Sideeye = () => (
+export const Software = () => (
   <Page>
     <Links>
       <div>

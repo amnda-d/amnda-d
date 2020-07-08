@@ -14,7 +14,7 @@ export class Header extends React.Component {
         </TitleLine>
         <Links>
           <Link to="/about">About</Link>
-          <Link to="/sideeye">SideEye</Link>
+          <Link to="/software">Software</Link>
           <Link to="/contact">Contact</Link>
         </Links>
       </Wrapper>
