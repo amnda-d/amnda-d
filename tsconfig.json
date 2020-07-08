@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "output",
+    "target": "es2017",
+    "module": "commonjs",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "lib": ["es2018", "dom"],
+    "noImplicitThis": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "allowJs": false,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "strict": false,
+    "paths": {
+      "src/*": ["src/*"],
+      "*": ["./@types/*"]
+    },
+    "types": ["jest", "node"]
+  }
+}
