@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import { Icon } from '@blueprintjs/core';
 import { IconNames } from '@blueprintjs/icons';
 import { colors, getColorScheme, light, dark } from './colors';
@@ -35,7 +35,7 @@ export class App extends React.Component {
   state = { color: getColorScheme(), colors: colors() };
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Background
           color={this.state.color}
           setColor={color =>
