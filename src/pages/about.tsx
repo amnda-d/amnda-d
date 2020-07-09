@@ -20,7 +20,8 @@ export const About = (props: { colors: Object }) => (
         can be used to model language learning and linguistic representation in
         the human brain. Specifically, I'm interested in how humans learn
         phonological patterns, and how phonological features are represented in
-        the brain.
+        the brain. My name is pronounced [əˈmændə duˈsɛt] and my pronouns are
+        they/them.
       </div>
       <Subtitle colors={props.colors}>Publication</Subtitle>
       <div>

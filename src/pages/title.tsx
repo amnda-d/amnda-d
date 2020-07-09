@@ -22,6 +22,7 @@ export const Title = (props: { colors: {} }) => (
 );
 
 const Wrapper = styled.div`
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
