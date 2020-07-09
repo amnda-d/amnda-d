@@ -32,6 +32,7 @@ export const Contact = () => (
 
 const Links = styled.div`
   padding: 10px;
+  margin-top: 30vh;
   font-size: 30px;
 
   a {

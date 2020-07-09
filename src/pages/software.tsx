@@ -25,6 +25,7 @@ export const Software = () => (
 
 const Links = styled.div`
   padding: 10px;
+  margin-top: 30vh;
   font-size: 20px;
 
   a {

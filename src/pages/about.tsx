@@ -52,7 +52,7 @@ export const About = (props: { colors: Object }) => (
 );
 
 const Bio = styled.div`
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 2rem;
   min-width: 300px;
   max-width: 50%;
