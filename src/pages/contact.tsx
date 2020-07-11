@@ -7,15 +7,7 @@ export const Contact = () => (
   <Page>
     <Links>
       <div>Amanda Doucette</div>
-      <div>
-        <a
-          className="reverse"
-          href="mailto:hi@amandadoucette.com"
-          target="_blank"
-        >
-          hi@amandadoucette.com
-        </a>
-      </div>
+      <div>hi [at] amandadoucette.com</div>
       <div>
         GitHub:{' '}
         <a
