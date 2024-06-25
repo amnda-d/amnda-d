@@ -21,7 +21,41 @@ export const About = (props: { colors: Object }) => (
         brain. My name is pronounced [əˈmændə duˈsɛt] and my pronouns are
         they/them.
       </div>
-      <Subtitle colors={props.colors}>Publication</Subtitle>
+      <Subtitle colors={props.colors}>Publications</Subtitle>
+      <div>
+        <a
+          className="reverse"
+          href="https://arxiv.org/abs/2406.05186"
+          target="_blank"
+        >
+          <b>
+            Correlation Does Not Imply Compensation: Complexity and Irregularity in the Lexicon
+          </b>
+          .
+        </a>
+        <br />
+        Amanda Doucette, Ryan Cotterell, Morgan Sonderegger, and Timothy J. O'Donnell.
+        <br />
+        <i>
+          SCiL 2024
+        </i>.
+        <a
+          className="reverse"
+          href="https://osf.io/ax78p/"
+          target="_blank"
+        >
+          {' '}
+          [code]
+        </a>
+        <a
+          className="reverse"
+          href="doucette_scil_2024.html"
+          target="_blank"
+        >
+          {' '}
+          [slides]
+        </a>
+      </div>
       <div>
         <a
           className="reverse"

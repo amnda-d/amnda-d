@@ -8,6 +8,7 @@ import { Title } from './pages/title';
 import { Contact } from './pages/contact';
 import { Software } from './pages/software';
 import { About } from './pages/about';
+import { SCiL } from './pages/scil';
 
 const Background = props => (
   <Wrapper colors={props.color === 'light' ? light : dark} className="App">
@@ -53,6 +54,7 @@ export class App extends React.Component {
             render={() => <About colors={this.state.colors} />}
           />
           <Route path="/software" component={Software} />
+          <Route path="/scil" render={() => <SCiL colors={this.state.colors} />} />
         </Background>
       </Router>
     );
