@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { Icon } from '@blueprintjs/core';
 import { IconNames } from '@blueprintjs/icons';
 import { colors, getColorScheme, light, dark } from './colors';
@@ -23,7 +23,7 @@ const Background = props => (
       >
         <Icon
           icon={props.color === 'light' ? IconNames.MOON : IconNames.FLASH}
-          iconSize={Icon.SIZE_LARGE}
+          size={20}
           color={colors().text}
         />
       </ColorIcon>
@@ -43,18 +43,22 @@ export class App extends React.Component {
             this.setState({ color, colors: color === 'light' ? light : dark })
           }
         >
+          <Routes>
           <Route
-            exact
+            // exact
             path="/"
-            component={() => <Title colors={this.state.colors} />}
+            // component={() => <Title colors={this.state.colors} />}
+            element={<Title colors={this.state.colors} />}
           />
-          <Route path="/contact" component={Contact} />
+          <Route path="/contact" element={<Contact />} />
           <Route
             path="/about"
-            render={() => <About colors={this.state.colors} />}
+            // render={() => <About colors={this.state.colors} />}
+            element={<About colors={this.state.colors} />}
           />
-          <Route path="/software" component={Software} />
-          <Route path="/scil" render={() => <SCiL colors={this.state.colors} />} />
+          <Route path="/software" element={<Software />} />
+          <Route path="/scil" element={<SCiL colors={this.state.colors} />} />
+          </Routes>
         </Background>
       </Router>
     );
@@ -68,7 +72,7 @@ const ColorIcon = styled.div`
   cursor: pointer;
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{ colors; }>`
   color: ${props => props.colors.text};
   a {
     text-decoration: none;

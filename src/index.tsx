@@ -1,7 +1,34 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { App } from './App';
-import 'particles.js';
+const container = document.getElementById('root');
+const root = createRoot(container!);
 
-(window as any).particlesJS.load('particles-js', 'static/particles.json');
-ReactDOM.render(<App />, document.getElementById('root'));
+// const router = createBrowserRouter([
+//     {
+//       path: "/",
+//       element: <Title />,
+//       children: [
+//         {
+//           path: "about",
+//           element: <About />,
+//         },
+//         {
+//             path: "contact",
+//             element: <Contact />,
+//           },
+//           {
+//             path: "scil",
+//             element: <SCiL />,
+//           },
+//           {
+//             path: "software",
+//             element: <Software />,
+//           },
+//       ],
+//     },
+//   ]);
+
+
+root.render(<App />);
+// ReactDOM.render(<App />, document.getElementById('root'));

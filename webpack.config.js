@@ -1,12 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const LiveReloadPlugin = require('webpack-livereload-plugin');
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+// const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.tsx',
+  mode: 'production',
   output: {
     filename: 'bundle.js',
     path: __dirname,
@@ -17,35 +18,42 @@ module.exports = {
 
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: ['.ts', '.tsx', '.js', '.json'],
+    // extensions: ['.ts', '.tsx', '.js', '.json'],
+    extensions: ['.ts', '.tsx', '.js'],
   },
+  performance: {
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+},
 
   module: {
     rules: [
       // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader',
+        // loader: 'awesome-typescript-loader',
+        loader: 'ts-loader',
+        exclude: /node_modules/,
       },
 
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-      { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader?-url'],
-      },
+      // { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
+      // {
+      //   test: /\.css$/,
+      //   use: ['style-loader', 'css-loader?-url'],
+      // },
     ],
   },
-  devServer: {
-    historyApiFallback: true,
-  },
+  // devServer: {
+  //   historyApiFallback: true,
+  // },
   plugins: [
     new HtmlWebpackPlugin({
       livereload:
         '<script src="http://localhost:35729/livereload.js"></script>',
       template: path.resolve(__dirname, 'src/index.html'),
     }),
-    new CopyWebpackPlugin([{ from: 'static' }]),
+    new CopyWebpackPlugin({ patterns: [{ from: 'static' }]}),
     new LiveReloadPlugin({ delay: 2000 }),
   ],
 };

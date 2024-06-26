@@ -13,7 +13,7 @@ export class Header extends React.Component {
       <Wrapper>
         <Icon
           icon={IconNames.MENU}
-          iconSize={Icon.SIZE_LARGE}
+          size={20}
           color="white"
           onClick={() => this.setState({ menuOpen: !this.state.menuOpen })}
         />

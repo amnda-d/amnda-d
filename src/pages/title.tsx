@@ -3,7 +3,7 @@ import Typist from 'react-typist';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const Title = (props: { colors: {} }) => (
+export const Title = (props: { colors: Object }) => (
   <Wrapper>
     <TitleLine
       colors={props.colors}
@@ -56,7 +56,7 @@ const TitleLine = styled(Typist)`
   }
 `;
 
-const Links = styled.div`
+const Links = styled.div<{ colors; }>`
   padding: 10px;
 
   a {

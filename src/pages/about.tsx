@@ -120,7 +120,7 @@ export const About = (props: { colors: Object }) => (
   </Page>
 );
 
-const Bio = styled.div`
+const Bio = styled.div<{ colors; }>`
   margin: 40px auto;
   padding: 2rem;
   min-width: 300px;
@@ -133,12 +133,12 @@ const Bio = styled.div`
   }
 `;
 
-const Title = styled.div`
+const Title = styled.div<{ colors; }>`
   font-size: 2rem;
   color: ${props => props.colors.red};
 `;
 
-const Subtitle = styled.div`
+const Subtitle = styled.div<{ colors; }>`
   font-size: 1.5rem;
   color: ${props => props.colors.red};
 `;

@@ -9,13 +9,23 @@ export const SCiL = (props: { colors: Object }) => (
       <div>Correlation Does Not Imply Compensation: Complexity and Irregularity in the Lexicon</div>
       <Authors colors={props.colors}>Amanda Doucette, Ryan Cotterell, Morgan Sonderegger, and Timothy J. O'Donnell</Authors>
       <div>
+        <p>
+          Paper:
         <a
           className="reverse"
           href="https://arxiv.org/abs/2406.05186"
           target="_blank"
         >
-          paper (arXiv)
+          [arXiv]
         </a>
+        <a
+          className="reverse"
+          href="https://openpublishing.library.umass.edu/scil/article/id/2136/"
+          target="_blank"
+        >
+          [SCiL Proceedings]
+        </a>
+        </p>
       </div>
       <div>
         <a
@@ -39,7 +49,7 @@ export const SCiL = (props: { colors: Object }) => (
   </Page>
 );
 
-const Links = styled.div`
+const Links = styled.div<{ colors; }>`
   padding: 30px;
   margin-top: 30vh;
   font-size: 30px;
@@ -63,7 +73,7 @@ const Links = styled.div`
   }
 `;
 
-const Authors = styled.div`
+const Authors = styled.div<{ colors; }>`
   font-size: 20px;
   color: ${props => props.colors.red};
 `
