@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[860],{803:(e,t,n)=>{n.r(t),n.d(t,{IconSvgPaths16:()=>c,IconSvgPaths20:()=>a,getIconPaths:()=>o,iconNameToPathsRecordKey:()=>u});var s=n(261),c=n(109),a=n(966),r=n(134);function o(e,t){var n=(0,s.fL)(e);return t===r.l.STANDARD?c[n]:a[n]}function u(e){return(0,s.fL)(e)}}}]);
+//# sourceMappingURL=860.bundle.js.map
