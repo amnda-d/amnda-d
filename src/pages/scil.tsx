@@ -51,7 +51,7 @@ export const SCiL = (props: { colors: Object }) => (
 
 const Links = styled.div<{ colors; }>`
   padding: 30px;
-  margin-top: 30vh;
+  margin-top: 10vh;
   font-size: 30px;
   background-color: ${props => props.colors.opaque};
   border-radius: 20px;

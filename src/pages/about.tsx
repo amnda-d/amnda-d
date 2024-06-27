@@ -25,6 +25,31 @@ export const About = (props: { colors: Object }) => (
       <div>
         <a
           className="reverse"
+          href="https://lingbuzz.net/lingbuzz/008234"
+          target="_blank"
+        >
+          <b>
+          Investigating the universality of consonant and vowel co-occurrence restrictions
+          </b>
+          .
+        </a>
+        <br />
+        Amanda Doucette, Timothy J. O'Donnell, Morgan Sonderegger, and Heather Goad.
+        <br />
+          lingbuzz preprint, submitted to <i>Glossa</i>,{' '}
+        <b>2024</b>.
+        <a
+          className="reverse"
+          href="https://osf.io/sgu4w/"
+          target="_blank"
+        >
+          {' '}
+          [code]
+        </a>
+      </div>
+      <div>
+        <a
+          className="reverse"
           href="https://arxiv.org/abs/2406.05186"
           target="_blank"
         >
