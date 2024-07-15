@@ -50,7 +50,7 @@ export const About = (props: { colors: Object }) => (
       <div>
         <a
           className="reverse"
-          href="https://arxiv.org/abs/2406.05186"
+          href="https://doi.org/10.7275/scil.2136"
           target="_blank"
         >
           <b>
@@ -62,8 +62,8 @@ export const About = (props: { colors: Object }) => (
         Amanda Doucette, Ryan Cotterell, Morgan Sonderegger, and Timothy J. O'Donnell.
         <br />
         <i>
-          SCiL 2024
-        </i>.
+        Society for Computation in Linguistics 7(1)
+        </i>, 117–128, <b>2024</b>.
         <a
           className="reverse"
           href="https://osf.io/ax78p/"
@@ -79,6 +79,22 @@ export const About = (props: { colors: Object }) => (
         >
           {' '}
           [slides]
+        </a>
+        <a
+          className="reverse"
+          href="https://arxiv.org/abs/2406.05186"
+          target="_blank"
+        >
+          {' '}
+          [arXiv]
+        </a>
+        <a
+          className="reverse"
+          href="https://doi.org/10.7275/scil.2136"
+          target="_blank"
+        >
+          {' '}
+          [doi:10.7275/scil.2136]
         </a>
       </div>
       <div>
