@@ -36,7 +36,7 @@ export const About = (props: { colors: Object }) => (
         <br />
         Amanda Doucette, Timothy J. O'Donnell, Morgan Sonderegger, and Heather Goad.
         <br />
-          <i>Glossa: a journal of general linguistics 9(1).</i>
+          <i>Glossa: a journal of general linguistics 9(1). </i>
         <b>2024</b>.
         <a
           className="reverse"
@@ -63,7 +63,7 @@ export const About = (props: { colors: Object }) => (
         <br />
         <i>
         Society for Computation in Linguistics 7(1)
-        </i>, 117–128, <b>2024</b>.
+        </i>, 117–128. <b>2024</b>.
         <a
           className="reverse"
           href="https://osf.io/ax78p/"
@@ -155,7 +155,7 @@ export const About = (props: { colors: Object }) => (
         <i>Soho House Ludlow Tech Club</i>. New York, NY. <b>May 14, 2019</b>.
         <br />
         <i>Originate</i> (for visiting students from Osaka College of Design and
-        IT). Los Angeles, CA. <b>November 15, 2019</b>
+        IT). Los Angeles, CA. <b>November 15, 2019.</b>
       </div>
     </Bio>
   </Page>
