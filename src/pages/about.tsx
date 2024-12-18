@@ -25,7 +25,7 @@ export const About = (props: { colors: Object }) => (
       <div>
         <a
           className="reverse"
-          href="https://lingbuzz.net/lingbuzz/008234"
+          href="https://doi.org/10.16995/glossa.9373"
           target="_blank"
         >
           <b>
@@ -36,7 +36,7 @@ export const About = (props: { colors: Object }) => (
         <br />
         Amanda Doucette, Timothy J. O'Donnell, Morgan Sonderegger, and Heather Goad.
         <br />
-          lingbuzz preprint, submitted to <i>Glossa</i>,{' '}
+          <i>Glossa: a journal of general linguistics 9(1).</i>
         <b>2024</b>.
         <a
           className="reverse"
